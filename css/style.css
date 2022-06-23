@@ -64,6 +64,69 @@ body {
   background-color: #fff;
 }
 
+.loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader img {
+  width: 280px;
+}
+
+
+/* loader 2 */
+
+.loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader1 {
+  height: 140%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader1 img {
+  width: 280px;
+}
+
+/* loader 2 kraj */
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -93,13 +156,11 @@ abbr[data-original-title] {
   text-decoration-skip-ink: none;
 }
 
-#bacground-deo{
-  background-image: url(../img/logo_1356_550-01.png);
-  background-attachment: fixed;
+/* #bacground-deo{
+  background-image: url(../img/logo_400_200-01.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 80%;
-}
+} */
 
 address {
   margin-bottom: 1rem;
@@ -160,13 +221,13 @@ sup {
 }
 
 a {
-  color: #a3a3a3;
+  color: #ffc107;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #ffc107;
+  color: #a3a3a3;
   text-decoration: underline;
 }
 
@@ -545,7 +606,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
-  border: 1px solid #dee2e6;
+  /* border: 1px solid #dee2e6; */
   max-width: 100%;
   height: auto;
 }
@@ -9497,9 +9558,15 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+#scrool {
+  /* overflow-y: scroll !important; */
+  overflow-y: scroll !important;
+}
+
 .navbar-vertical.navbar-light .navbar-nav .nav-link {
   padding: 8px 30px;
   border-bottom: 1px solid #EDF1FF;
+  scroll-behavior: auto;
 }
 
 #header-carousel img {
